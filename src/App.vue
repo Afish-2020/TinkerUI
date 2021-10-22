@@ -1,0 +1,13 @@
+<template>
+  <div >导航栏
+  </div>
+  <hr/>
+  <router-view></router-view>
+</template>
+
+<script>
+
+export default {
+  name: 'App',
+}
+</script>
