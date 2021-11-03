@@ -3,13 +3,13 @@
 打开终端运行下列命令：
 
 ```
-npm install Tinker-ui
+npm install tinker-ui
 ```
 
 或
 
 ```
-yarn add Tinker-ui
+yarn add tinker-ui
 ```
 
 下一节：[开始使用](#/doc/get-started)
