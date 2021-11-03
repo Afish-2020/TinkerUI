@@ -272,7 +272,7 @@
     "@vue/compiler-core" "3.2.20"
     "@vue/shared" "3.2.20"
 
-"@vue/compiler-sfc@3.2.20", "@vue/compiler-sfc@^3.0.0-rc.1", "@vue/compiler-sfc@^3.0.3":
+"@vue/compiler-sfc@3.2.20", "@vue/compiler-sfc@^3.0.0", "@vue/compiler-sfc@^3.0.3":
   version "3.2.20"
   resolved "https://registry.npmmirror.com/@vue/compiler-sfc/download/@vue/compiler-sfc-3.2.20.tgz?cache=0&sync_timestamp=1633712762379&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2F%40vue%2Fcompiler-sfc%2Fdownload%2F%40vue%2Fcompiler-sfc-3.2.20.tgz#2d7668e76f066c566dd7c09c15c9acce4e876e0a"
   integrity sha1-LXZo528GbFZt18CcFcmszk6Hbgo=
@@ -822,6 +822,11 @@ get-stream@^5.0.0:
   dependencies:
     pump "^3.0.0"
 
+github-markdown-css@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.npmmirror.com/github-markdown-css/download/github-markdown-css-5.0.0.tgz#829966927643426f0a43aabee9991a3ed532280d"
+  integrity sha1-gplmknZDQm8KQ6q+6ZkaPtUyKA0=
+
 glob-parent@^5.1.2, glob-parent@~5.1.2:
   version "5.1.2"
   resolved "https://registry.npmmirror.com/glob-parent/download/glob-parent-5.1.2.tgz#869832c58034fe68a4093c17dc15e8340d8401c4"
@@ -1225,6 +1230,11 @@ magic-string@^0.25.7:
   dependencies:
     sourcemap-codec "^1.4.4"
 
+marked@^3.0.8:
+  version "3.0.8"
+  resolved "https://registry.npmmirror.com/marked/download/marked-3.0.8.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fmarked%2Fdownload%2Fmarked-3.0.8.tgz#2785f0dc79cbdc6034be4bb4f0f0a396bd3f8aeb"
+  integrity sha1-J4Xw3HnL3GA0vku08PCjlr0/ius=
+
 media-typer@0.3.0:
   version "0.3.0"
   resolved "https://registry.npm.taobao.org/media-typer/download/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"
@@ -1477,6 +1487,11 @@ postcss@^8.1.10:
     nanoid "^3.1.28"
     picocolors "^0.2.1"
     source-map-js "^0.6.2"
+
+prismjs@^1.25.0:
+  version "1.25.0"
+  resolved "https://registry.nlark.com/prismjs/download/prismjs-1.25.0.tgz#6f822df1bdad965734b310b315a23315cf999756"
+  integrity sha1-b4It8b2tllc0sxCzFaIzFc+Zl1Y=
 
 pump@^3.0.0:
   version "3.0.0"
@@ -1859,7 +1874,7 @@ vue-router@4.0.0-beta.3:
   resolved "https://registry.npmmirror.com/vue-router/download/vue-router-4.0.0-beta.3.tgz?cache=0&sync_timestamp=1634663514839&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fvue-router%2Fdownload%2Fvue-router-4.0.0-beta.3.tgz#e46f45807023a4b8ce73a143a216b4c9ea3eb243"
   integrity sha1-5G9FgHAjpLjOc6FDoha0yeo+skM=
 
-vue@^3.0.0-rc.1, vue@^3.0.3:
+vue@^3.0.0, vue@^3.0.3:
   version "3.2.20"
   resolved "https://registry.npmmirror.com/vue/download/vue-3.2.20.tgz?cache=0&sync_timestamp=1633712767060&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fvue%2Fdownload%2Fvue-3.2.20.tgz#940f8aa8bf3e3be78243ca582bad41fcd45ae3e6"
   integrity sha1-lA+KqL8+O+eCQ8pYK61B/NRa4+Y=

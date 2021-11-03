@@ -11,9 +11,9 @@
                     <main>
                         <slot name="content" />
                     </main>
-                    <footer>
-                        <Button @click="ok">OK</Button>
-                        <Button @click="cancel">Cancel</Button>
+                    <footer v-if="ok">
+                        <Button @click="ok1">确定</Button>
+                        <Button @click="cancel1">取消</Button>
                     </footer>
                 </div>
             </div>
@@ -38,7 +38,7 @@ export default {
             default: true
         },
         ok: {
-            type: Function
+            type: Function,
         },
         cancel: {
             type: Function
@@ -53,17 +53,17 @@ export default {
                 close()
             }
         }
-        const ok = () => {
+        const ok1 = () => {
             if (props.ok?.() !== false) {
                 close()
             }
         }
-        const cancel = () => {
+        const cancel1 = () => {
             if (props.cancel?.() !== false) {
                 close()
             }
         }
-        return { close, OnClickOverlay, ok, cancel }
+        return { close, OnClickOverlay, ok1, cancel1 }
     }
 }
 </script>
@@ -75,6 +75,7 @@ $border-color: #d9d9d9;
     border-radius: $radius;
     box-shadow: 0 0 3px fade_out(black, 0.5);
     min-width: 15em;
+    min-height: 10em;
     max-width: 90%;
     &-overlay {
         position: fixed;
@@ -83,7 +84,7 @@ $border-color: #d9d9d9;
         width: 100%;
         height: 100%;
         background: fade_out(black, 0.5);
-        z-index: 10;
+        z-index: 11;
     }
     &-wrapper {
         position: fixed;
@@ -94,7 +95,6 @@ $border-color: #d9d9d9;
     }
     > header {
         padding: 12px 16px;
-        border-bottom: 1px solid $border-color;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -104,7 +104,6 @@ $border-color: #d9d9d9;
         padding: 12px 16px;
     }
     > footer {
-        border-top: 1px solid $border-color;
         padding: 12px 16px;
         text-align: right;
     }
@@ -121,7 +120,7 @@ $border-color: #d9d9d9;
             height: 1px;
             background: black;
             width: 100%;
-            top: 50%;
+            top: 20%;
             left: 50%;
         }
         &::before {

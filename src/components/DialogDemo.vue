@@ -1,52 +1,42 @@
 <template>
-    <div>Dialog 示例</div>
-    <h2>示例 1</h2>
-    <Button @click="toggle">toggle</Button>
-    <Dialog v-model:visible="x" :closeOnClickOverlay="false" :ok="f1" :cancel="f2">
-        <template v-slot:content>
-            <strong>你好</strong>
-            <div>hi</div>
-        </template>
-        <template v-slot:title>
-            <strong>加粗的标题</strong>
-        </template>
-    </Dialog>
-    <h2>示例 2</h2>
-    <Button @click="showDialog">showDialog</Button>
+    <h1 class="switch-title">Dialog 组件</h1>
+    <h3 class="switch-h">基础用法</h3>
+    <P>
+        绑定
+        <strong class="switch-p">v-model</strong> 到一个
+        <strong class="switch-p">Boolean</strong> 类型的变量。
+    </P>
+    <Demo :component="Dialog3Demo" />
+    <h3 class="switch-h">支持 closeOnClickOverlay</h3>
+    <P>
+        添加
+        <strong class="switch-p">closeOnClickOverlay</strong> 设置是否通过点击遮罩层关闭
+        <strong class="switch-p">Dialog</strong>。
+    </P>
+    <Demo :component="Dialog4Demo" />
+    <h3 class="switch-h">支持处理 Button</h3>
+    <P>
+        添加处理
+        <strong class="switch-p">Button</strong> 对
+        <strong class="switch-p">Dialog</strong> 进行下一步处理。
+    </P>
+    <Demo :component="Dialog1Demo" />
+    <h3 class="switch-h">支持函数式调用</h3>
+    <p>隐藏dom结构，只暴露出调用的api</p>
+    <Demo :component="Dialog2Demo" />
 </template>
-<script>
-import { openDialog } from "../lib/openDialog.ts"
-import Dialog from "../lib/Dialog.vue"
-import Button from "../lib/Button.vue"
-import { ref } from 'vue'
+<script lang="ts">
+import Dialog1Demo from "./Dialog1.demo.vue"
+import Dialog2Demo from "./Dialog2.demo.vue"
+import Dialog3Demo from "./Dialog3.demo.vue"
+import Dialog4Demo from "./Dialog4.demo.vue"
+import Demo from './Demo.vue'
 export default {
-    components: { Dialog, Button },
+    components: { Demo },
     setup() {
-        const x = ref(false)
-        const toggle = () => {
-            x.value = !x.value
-        }
-        const f1 = () => {
-            console.log('1')
-            return false
-        }
-        const f2 = () => {
-            console.log('2')
-        }
-        const showDialog = () => {
-            openDialog({
-                title: "标题",
-                content: "你好",
-                OnClickOverlay: false,
-                ok() {
-                    console.log('ok')
-                },
-                cancel() {
-                    console.log('cancel')
-                },
-            })
-        }
-        return { x, toggle, f1, f2, showDialog }
+        return { Dialog1Demo, Dialog2Demo, Dialog3Demo, Dialog4Demo }
     }
 }
 </script>
+<style>
+</style>
