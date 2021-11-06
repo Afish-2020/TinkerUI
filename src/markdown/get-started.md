@@ -4,7 +4,7 @@
 然后在你的代码中写入下面的代码
 
 ```
-import {Button, Tabs, Switch, Dialog, openDialog} from "tinker-ui"
+import {Button, Tabs, Switch, Dialog, openDialog, Input} from "tinker-ui"
 ```
 
 就可以使用我提供的组件了。
@@ -21,7 +21,7 @@ import {Button, Tabs, Switch, Dialog, openDialog} from "tinker-ui"
   </div>
 </template>
 <script>
-import {Button, Tabs, Switch, Dialog, openDialog} from "Tinker-ui"
+import {Button, Tabs, Switch, Dialog, openDialog, Input} from "Tinker-ui"
 export default {
   components: {Button}
 }

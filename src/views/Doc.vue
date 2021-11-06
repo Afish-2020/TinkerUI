@@ -27,6 +27,9 @@
                         <router-link to="/doc/dialog">Dialog 组件</router-link>
                     </li>
                     <li>
+                        <router-link to="/doc/input">Input 组件</router-link>
+                    </li>
+                    <li>
                         <router-link to="/doc/tabs">Tabs 组件</router-link>
                     </li>
                 </ol>
@@ -100,9 +103,10 @@ aside {
     > ol {
         > li {
             font-size: 16px;
+
             > a {
                 display: block;
-                padding: 4px 64px;
+                padding: 8px 64px;
                 &:hover {
                     text-decoration: none;
                 }
@@ -110,10 +114,10 @@ aside {
             .router-link-active {
                 background: linear-gradient(
                     90deg,
-                    rgba(235, 224, 253, 1) 0%,
-                    rgba(209, 190, 234, 1) 99%,
-                    rgba(167, 109, 217, 1) 99%,
-                    rgba(110, 2, 195, 1) 100%
+                    rgba(230, 247, 255, 1) 0%,
+                    rgba(163, 218, 255, 1) 99%,
+                    rgba(32, 160, 255, 1) 99%,
+                    rgba(32, 160, 255, 1) 100%
                 );
                 text-decoration: none;
             }

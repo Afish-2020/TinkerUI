@@ -73,5 +73,5 @@ $border-color: #d9d9d9;
 }
 </style>
 <style lang="scss">
-@import "prismjs/themes/prism.css";
+@import "prismjs/themes/prism-okaidia.css";
 </style>
