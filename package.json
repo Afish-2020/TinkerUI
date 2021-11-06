@@ -1,6 +1,6 @@
 {
   "name": "tinker-ui",
-  "version": "0.0.0",
+  "version": "0.0.4",
   "files": [
     "dist/lib/*"
   ],
